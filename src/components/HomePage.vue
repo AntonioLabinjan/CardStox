@@ -216,13 +216,33 @@ function generateFakePriceTrend(basePrice) {
 
 
 
-    const cards = ref([
+
+const cards = ref([
   { name: "BlackLotus", imageUrl: "https://th.bing.com/th/id/OIP.lEBzHawiOVECEhY-Ljg7GAHaKV?rs=1&pid=ImgDetMain", description: "A cursed powerful flower", price: "$150", year: "1993", category: "Magic: The Gathering", priceTrend: generateFakePriceTrend("$150") },
   { name: "Pikachu", imageUrl: "https://th.bing.com/th/id/OIP.F1FP7pDna6eSm77EGoe0LAHaJ5?rs=1&pid=ImgDetMain", description: "Electrical menace", price: "$120", year: "1996", category: "Pokemon", priceTrend: generateFakePriceTrend("$150") },
   { name: "Blue Eyes Ultimate Dragon", imageUrl: "https://th.bing.com/th/id/OIP.7Zaj98ryYXkH2XYqC8vkgwHaKu?rs=1&pid=ImgDetMain", description: "Magical dragon which transcends time and space.", price: "$100", year: "1999", category: "Yu-Gi-Oh!", priceTrend: generateFakePriceTrend("$150") },
   { name: "Guilmon", imageUrl: "https://th.bing.com/th/id/OIP.OOra0tdXDcz09uizOLQaRAHaKU?rs=1&pid=ImgDetMain", description: "Fiery dragon", price: "$90", year: "1997", category: "Digimon", priceTrend: generateFakePriceTrend("$150") },
-  { name: "Son Goku", imageUrl: "https://th.bing.com/th/id/R.9ab05cbe86ec7395e1c3a96c644d874b?rik=fIhPOgI5z19s3A&pid=ImgRaw&r=0", description: "Like Goku, but angrier.", price: "$80", year: "1989", category: "Dragon Ball", priceTrend: generateFakePriceTrend("$150") }
+  { name: "Son Goku", imageUrl: "https://th.bing.com/th/id/R.9ab05cbe86ec7395e1c3a96c644d874b?rik=fIhPOgI5z19s3A&pid=ImgRaw&r=0", description: "Like Goku, but angrier.", price: "$80", year: "1989", category: "Dragon Ball", priceTrend: generateFakePriceTrend("$150") },
+  { name: "Charizard", imageUrl: "https://th.bing.com/th/id/OIP.guz6dM50uI69AqoOx_ksGwHaKZ?rs=1&pid=ImgDetMain", description: "The legendary fire-breathing lizard.", price: "$250", year: "1999", category: "Pokemon", priceTrend: generateFakePriceTrend("$250") },
+  { name: "Dark Magician", imageUrl: "https://th.bing.com/th/id/R.1909d5f5ea6334a30dbeb858446a1e46?rik=UwlWgkdD34GZDw&pid=ImgRaw&r=0", description: "The ultimate wizard in terms of attack and defense.", price: "$120", year: "1999", category: "Yu-Gi-Oh!", priceTrend: generateFakePriceTrend("$120") },
+  { name: "Angemon", imageUrl: "https://th.bing.com/th/id/OIP.BSOVQ8IHqiFGXRfucEbn8gAAAA?w=208&h=291&c=7&r=0&o=5&dpr=1.3&pid=1.7",description: "A holy Digimon with powerful angelic energy.", price: "$75", year: "1998", category: "Digimon", priceTrend: generateFakePriceTrend("$75") },
+  { name: "Vegeta", imageUrl: "https://th.bing.com/th/id/OIP.FOvkh5iCHsz2N1yvu8y4LwAAAA?rs=1&pid=ImgDetMain", description: "The Saiyan prince with immense pride.", price: "$90", year: "1990", category: "Dragon Ball", priceTrend: generateFakePriceTrend("$90") },
+  { name: "Mox Sapphire", imageUrl: "https://th.bing.com/th/id/OIP.giTmm38-VRLUC6HeGfuOSAHaKX?rs=1&pid=ImgDetMain", description: "A jewel of untapped magical power.", price: "$5,000", year: "1993", category: "Magic: The Gathering", priceTrend: generateFakePriceTrend("$5000") },
+  { name: "Mewtwo", imageUrl: "https://th.bing.com/th/id/OIP.b8N-WKRYEQCmdp934MB7-AHaKV?rs=1&pid=ImgDetMain",description: "A genetically engineered psychic Pokemon.", price: "$200", year: "1996", category: "Pokemon", priceTrend: generateFakePriceTrend("$200") },
+  { name: "Red Eyes Black Dragon",imageUrl:"https://product-images.tcgplayer.com/285209.jpg", description: "A dragon with a fiery soul.", price: "$110", year: "1999", category: "Yu-Gi-Oh!", priceTrend: generateFakePriceTrend("$110") },
+  { name: "Frieza", imageUrl:'https://th.bing.com/th/id/OIP.KHX2Kq9k4DqzsDN4SArazwAAAA?w=395&h=550&rs=1&pid=ImgDetMain',description: "The galactic tyrant with an array of transformations.", price: "$85", year: "1990", category: "Dragon Ball", priceTrend: generateFakePriceTrend("$85") },
+  { name: "Time Walk", imageUrl:"https://th.bing.com/th/id/R.96451a9f3fb704ac49348d2491e01653?rik=cg6piocrEcZKXg&pid=ImgRaw&r=0",description: "Take an extra turn and manipulate time.", price: "$3,500", year: "1993", category: "Magic: The Gathering", priceTrend: generateFakePriceTrend("$3500") },
+  { name: "Blastoise", imageUrl:"https://th.bing.com/th/id/OIP.gX6Y0KWNA-IEBdVh7gWDIQHaKL?w=208&h=286&c=7&r=0&o=5&dpr=1.3&pid=1.7",description: "The water cannon turtle.", price: "$190", year: "1999", category: "Pokemon", priceTrend: generateFakePriceTrend("$190") },
+  { name: "Exodia the Forbidden One", imageUrl:"https://th.bing.com/th/id/OIP.QeaW0bXijZfaBUmsWlFuwAHaKz?rs=1&pid=ImgDetMain",description: "Legendary pieces combine for ultimate power.", price: "$150", year: "1999", category: "Yu-Gi-Oh!", priceTrend: generateFakePriceTrend("$150") },
+  { name: "MetalGarurumon", imageUrl:"https://th.bing.com/th/id/OIP.CL8VIIB4A3aXdEgQ-DTp3QHaHa?rs=1&pid=ImgDetMain",description: "A machine-like wolf with devastating attacks.", price: "$85", year: "1999", category: "Digimon", priceTrend: generateFakePriceTrend("$85") },
+  { name: "Gohan", imageUrl:"https://th.bing.com/th/id/OIP.7GkmSYGo54I2JxtULaWNRwAAAA?w=208&h=282&c=7&r=0&o=5&dpr=1.3&pid=1.7",description: "The half-Saiyan warrior with great potential.", price: "$70", year: "1991", category: "Dragon Ball", priceTrend: generateFakePriceTrend("$70") },
+  { name: "Force of Will", imageUrl:"https://th.bing.com/th/id/R.0b315a799c68f08754dbd05874b1c6c4?rik=w1UzOtb2litZkQ&pid=ImgRaw&r=0",description: "A counterspell of immense power.", price: "$200", year: "1994", category: "Magic: The Gathering", priceTrend: generateFakePriceTrend("$200") },
+  { name: "Lugia", imageUrl:"https://th.bing.com/th/id/OIP.H8cvznsi1LGShkfaa4jTcwHaKU?w=208&h=291&c=7&r=0&o=5&dpr=1.3&pid=1.7",description: "The guardian of the seas.", price: "$210", year: "2000", category: "Pokemon", priceTrend: generateFakePriceTrend("$210") },
+  { name: "Slifer the Sky Dragon",imageUrl:"https://th.bing.com/th/id/R.e932af9d97c855bc09a30e6c58968261?rik=qFemhlDaIm7%2f7g&pid=ImgRaw&r=0", description: "The divine beast with incredible strength.", price: "$125", year: "2001", category: "Yu-Gi-Oh!", priceTrend: generateFakePriceTrend("$125") },
+  { name: "Omnimon", imageUrl:"https://th.bing.com/th/id/R.bf8510e52909e9ff5122636faaec396e?rik=%2ftPrSQgYwvQI6Q&pid=ImgRaw&r=0",description: "The ultimate fusion of two legendary Digimon.", price: "$150", year: "2000", category: "Digimon", priceTrend: generateFakePriceTrend("$150") },
+  { name: "Majin Buu",imageUrl:"https://th.bing.com/th/id/R.bf8510e52909e9ff5122636faaec396e?rik=%2ftPrSQgYwvQI6Q&pid=ImgRaw&r=0", description: "The chaotic force of destruction.", price: "$90", year: "1994", category: "Dragon Ball", priceTrend: generateFakePriceTrend("$90") },
 ]);
+
 
 
     const categories = ref([
