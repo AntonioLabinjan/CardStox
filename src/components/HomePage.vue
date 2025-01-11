@@ -17,10 +17,10 @@
   <!-- Category Dropdown -->
   <div class="profile-dropdown" style="position: relative;" v-if="categoriesVisible">
     <a 
-      class="dropdown-btn" 
+   class="dropdown-btn" 
       v-for="category in categories" 
       :key="category" 
-      href="#"
+      
       @click.prevent="filterByCategory(category)"
     >
       {{ category }}
