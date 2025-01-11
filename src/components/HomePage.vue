@@ -240,7 +240,7 @@ const cards = ref([
   { name: "Lugia", imageUrl:"https://th.bing.com/th/id/OIP.H8cvznsi1LGShkfaa4jTcwHaKU?w=208&h=291&c=7&r=0&o=5&dpr=1.3&pid=1.7",description: "The guardian of the seas.", price: "$210", year: "2000", category: "Pokemon", priceTrend: generateFakePriceTrend("$210") },
   { name: "Slifer the Sky Dragon",imageUrl:"https://th.bing.com/th/id/R.e932af9d97c855bc09a30e6c58968261?rik=qFemhlDaIm7%2f7g&pid=ImgRaw&r=0", description: "The divine beast with incredible strength.", price: "$125", year: "2001", category: "Yu-Gi-Oh!", priceTrend: generateFakePriceTrend("$125") },
   { name: "Omnimon", imageUrl:"https://th.bing.com/th/id/R.bf8510e52909e9ff5122636faaec396e?rik=%2ftPrSQgYwvQI6Q&pid=ImgRaw&r=0",description: "The ultimate fusion of two legendary Digimon.", price: "$150", year: "2000", category: "Digimon", priceTrend: generateFakePriceTrend("$150") },
-  { name: "Majin Buu",imageUrl:"https://th.bing.com/th/id/R.bf8510e52909e9ff5122636faaec396e?rik=%2ftPrSQgYwvQI6Q&pid=ImgRaw&r=0", description: "The chaotic force of destruction.", price: "$90", year: "1994", category: "Dragon Ball", priceTrend: generateFakePriceTrend("$90") },
+  { name: "Majin Buu",imageUrl:"https://product-images.tcgplayer.com/fit-in/437x437/159010.jpg", description: "The chaotic force of destruction.", price: "$90", year: "1994", category: "Dragon Ball", priceTrend: generateFakePriceTrend("$90") },
 ]);
 
 
